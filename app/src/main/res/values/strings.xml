@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Laboratorio</string>
+    <string name="activity1">Activity 1</string>
+    <string name="activity2">Activity 2</string>
+
+    <string name="button1">Ir a la actividad 2</string>
+    <string name="button2">Finalizar activity actual</string>
+
+</resources>
