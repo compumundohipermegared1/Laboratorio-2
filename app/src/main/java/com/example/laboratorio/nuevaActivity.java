@@ -4,8 +4,8 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.view.View;
 import android.widget.Button;
+import android.widget.TextView;
 
 public class nuevaActivity extends AppCompatActivity {
 
@@ -14,12 +14,12 @@ public class nuevaActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_nueva);
         Button changeActivity1BTN = findViewById(R.id.button2);
-        changeActivity1BTN.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                changeActivity();
-            }
-        });
+        Intent intent =getIntent();
+        String txt =intent.getStringExtra("Nombre");
+        TextView text = findViewById(R.id.texto2);
+        text.setText(txt);
+
+        changeActivity1BTN.setOnClickListener(view -> changeActivity());
     }
     private void changeActivity(){
         Intent intent = new Intent(this, MainActivity.class);

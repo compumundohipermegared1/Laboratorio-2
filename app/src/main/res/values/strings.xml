@@ -1,9 +1,9 @@
 <resources>
     <string name="app_name">Laboratorio</string>
-    <string name="activity1">Activity 1</string>
-    <string name="activity2">Activity 2</string>
+    <string name="activity1">Pantalla 01</string>
+    <string name="activity2">Pantalla 02</string>
 
-    <string name="button1">Ir a la actividad 2</string>
-    <string name="button2">Finalizar activity actual</string>
+    <string name="button1">Enter</string>
+    <string name="button2">Regresar</string>
 
 </resources>
